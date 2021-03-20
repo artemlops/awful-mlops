@@ -44,6 +44,13 @@ spec:
       containers:
         - name: main
           image: python:3.7
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "100m"
+            limits:
+              memory: "128Mi"
+              cpu: "250m"
           env:
             - name: GIT_REPO
               value: https://github.com/artemlops/mlops-failure-stories.git
