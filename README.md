@@ -32,6 +32,6 @@ Failure stories can be anything like blog posts, conference/meetup talks, incide
 
 Thanks to all contributors and everybody who writes public Kubernetes postmortems! 👏
 
-Thanks to [k8s.af](https://k8s.af/) for the inspirational idea! 👏
+Thanks to [k8s.af](https://k8s.af/) for the inspirational idea and site design! 👏
 
-Thanks to [Neu.ro](https://neu.ro) for contributing his domain mlops.af for this project! 👏
+Thanks to [Neu.ro](https://neu.ro) for contributing the domain for this project! 👏
