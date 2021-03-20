@@ -1,6 +1,7 @@
 # MLOps Failure Stories
 
-A compiled list of links to public failure stories related to MLOps.
+[mlops.af](https://mlops.af) is a compiled list of links to public failure stories related to MLOps.
+The list is being constantly updated.
 Most recent publications on top.
 
 * [Why we switched from fluent-bit to Fluentd in 2 hours - PrometheusKube - blog post 2020](https://prometheuskube.com/why-we-switched-from-fluent-bit-to-fluentd-in-2-hours) 
