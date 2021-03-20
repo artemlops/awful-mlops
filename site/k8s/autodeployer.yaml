@@ -53,7 +53,7 @@ spec:
               cpu: "250m"
           env:
             - name: GIT_REPO
-              value: https://github.com/artemlops/mlops-failure-stories.git
+              value: https://github.com/artemlops/awful-mlops.git
           command: ["/bin/sh", "-c"]
           args:
             - curl -LO "https://dl.k8s.io/release/v1.20.4/bin/linux/amd64/kubectl"

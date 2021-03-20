@@ -1,6 +1,6 @@
-# MLOps Failure Stories
+# Awful MLOps
 
-[mlops.af](https://mlops.af) is a compiled list of links to public failure stories related to MLOps.
+[mlops.af](https://mlops.af) is a compiled list of links to public **failure stories** related to MLOps.
 The list is being constantly updated.
 Most recent publications on top.
 
@@ -26,7 +26,7 @@ Please, don't be too much scared of these horror stories, they all end well 😉
 
 # Contributing
 
-Please help the community and **[share a link to your failure story by opening a Pull Request!](https://github.com/artemlops/mlops-failure-stories/pulls)**
+Please help the community and **[share a link to your failure story by opening a Pull Request!](https://github.com/artemlops/awful-mlops/pulls)**
 Failure stories can be anything like blog posts, conference/meetup talks, incident postmortems, tweetstorms, ...
 
 # Thanks

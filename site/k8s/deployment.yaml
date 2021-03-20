@@ -29,7 +29,7 @@ spec:
           image: python:3.7
           env:
             - name: GIT_REPO
-              value: https://github.com/artemlops/mlops-failure-stories.git
+              value: https://github.com/artemlops/awful-mlops.git
           volumeMounts:
             - name: sources-root
               mountPath: /var/www/mlops.af/public
