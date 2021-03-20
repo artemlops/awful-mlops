@@ -11,3 +11,8 @@ kubectl -n mlops-af get all,ingress
 
 # redeploy
 kubectl -n mlops-af rollout restart deployment.apps/mlops-af
+
+# TLS support:
+# install cert-manager to the cluster...
+# create issuer
+kubectl create -f site/k8s/staging_issuer.yaml
