@@ -35,4 +35,4 @@ Thanks to all contributors and everybody who writes public Kubernetes postmortem
 
 Thanks to [k8s.af](https://k8s.af/) for the inspirational idea and site design! 👏
 
-Thanks to [Neu.ro](https://neu.ro) for hosting [mlops.af](https://mlops.af)! 👏
+Thanks to [Neu.ro](https://neu.ro) for hosting domain [mlops.af](https://mlops.af)! 👏
