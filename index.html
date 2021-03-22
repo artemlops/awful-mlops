@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MLOps Failure Stories</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+        <link rel="shortcut icon" type="image/png" href="img/fire.png">
+    </head>
+    <body>
+        <section class="section">
+            <div class="container">
+                <div class="content" >
+                    <img width="15%" height="15%" src="img/aiia.png">
+                    <img width="5%" height="5%" style="vertical-align:top" src="img/fire.png">
+                    <h1>Awful MLOps</h1>
+<p><a href="https://mlops.af">mlops.af</a> is a compiled list of links to public <strong>failure stories</strong> related to MLOps.
+The list is being constantly updated.
+Most recent publications on top.</p>
+<ul>
+<li>
+<p><a href="https://prometheuskube.com/why-we-switched-from-fluent-bit-to-fluentd-in-2-hours">Why we switched from fluent-bit to Fluentd in 2 hours - PrometheusKube - blog post 2020</a> </p>
+<ul>
+<li>involved: fluent-bit, missing logs, Fluentd</li>
+<li>impact: lost application logs in production</li>
+</ul>
+</li>
+<li>
+<p><a href="https://towardsdatascience.com/what-happens-to-ai-when-the-world-stops-covid-19-cf905a331b2f">What Happens to AI When the World Stops(COVID-19)? - High-level analytics page on Data Science stability</a> (This is just an example from the world of BI)</p>
+<ul>
+<li>involved: Data Science, COVID-19</li>
+<li>impact: all failed</li>
+</ul>
+</li>
+</ul>
+<h1>Why</h1>
+<p>MLOps is a fairly new area of software development, which can be <a href="https://cloud.google.com/solutions/machine-learning/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning">defined</a> as "continuous delivery and automation pipelines in machine learning".
+This tech field combines multiple different aspects such as ML and data pipelines, infrastructure management and DevOps, model management, and many other.
+And since this area is being currently established, the tech community eagers for the real-world horror stories to learn from!</p>
+<p>The idea to create such a page came up to us during the first Clubhouse meeting of the <a href="https://ai-infrastructure.org/">AI Infrastructure Alliance</a> on March 1, 2021.
+During the discussion, we came up to the conclusion that MLOps engineering community needs a collection of failure stories similar to <a href="https://k8s.af/">k8s.af</a> for Kubernetes.</p>
+<p>Please, don't be too much scared of these horror stories, they all end well 😉</p>
+<h1>Contributing</h1>
+<p>Please help the community and <strong><a href="https://github.com/artemlops/awful-mlops/pulls">share a link to your failure story by opening a Pull Request!</a></strong>
+Failure stories can be anything like blog posts, conference/meetup talks, incident postmortems, tweetstorms, ...</p>
+<h1>Thanks</h1>
+<p>Thanks to all contributors and everybody who writes public Kubernetes postmortems! 👏</p>
+<p>Thanks to <a href="https://k8s.af/">k8s.af</a> for the inspirational idea and site design! 👏</p>
+<p>Thanks to <a href="https://neu.ro">Neu.ro</a> for hosting <a href="https://mlops.af">mlops.af</a>! 👏</p>
+                </div>
+                <hr>
+            </div>
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p><strong>MLOps Failure Stories</strong> 
+                        <br/> generated from <a href="https://github.com/artemlops/awful-mlops">github.com/artemlops/awful-mlops</a>
+                        <br/> inspired by <a href="https://codeberg.org/hjacobs/kubernetes-failure-stories">codeberg.org/hjacobs/kubernetes-failure-stories</a>
+                    </p>
+                </div>
+            </footer>
+        </section>
+    </body>
+</html>
