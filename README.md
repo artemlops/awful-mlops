@@ -31,8 +31,10 @@ Failure stories can be anything like blog posts, conference/meetup talks, incide
 
 # Thanks
 
-Thanks to all contributors and everybody who writes public Kubernetes postmortems! 👏
+Thanks to all contributors and everybody who writes public MLOps horror stories! 👏
+
+Thanks to GH Pages for hosting the website [artemlops.github.io/awful-mlops](https://artemlops.github.io/awful-mlops/) 👏
+
+Thanks to [Neu.ro](https://neu.ro) for hosting the domain name [mlops.af](https://mlops.af)! 👏
 
 Thanks to [k8s.af](https://k8s.af/) for the inspirational idea and site design! 👏
-
-Thanks to [Neu.ro](https://neu.ro) for hosting domain [mlops.af](https://mlops.af)! 👏
