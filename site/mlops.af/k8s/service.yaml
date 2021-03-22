@@ -1,12 +1,13 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: mlops-af-service
+  namespace: mlops-af
+  name: mlops-af-proxy
 spec:
   selector:
     app: mlops-af
   ports:
   - protocol: TCP
     port: 80
-    targetPort: 8080
+    targetPort: 80
   type: ClusterIP

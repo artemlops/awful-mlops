@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: mlops-af
+---
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  namespace: mlops-af
+  name: mlops-af-proxy
+  labels:
+    app: mlops-af
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mlops-af
+  template:
+    metadata:
+      labels:
+        app: mlops-af
+    spec:
+      containers:
+        - name: server
+          image: nginx:1.19.7
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 8080
+            initialDelaySeconds: 5
+            periodSeconds: 5

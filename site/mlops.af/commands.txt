@@ -1,0 +1,15 @@
+# install ingress controller: https://kubernetes.github.io/ingress-nginx/deploy/
+
+# TLS support:
+# install cert-manager to the cluster...
+# create issuer
+kubectl create -f k8s/tls/prod_issuer.yaml
+
+
+# deploy
+kubectl create -f k8s/namespace.yaml
+kubectl create -f k8s/replicaset.yaml
+kubectl create -f k8s/service.yaml
+kubectl create -f k8s/ingress.yaml
+
+kubectl -n mlops-af get all,ingress

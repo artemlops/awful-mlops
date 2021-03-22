@@ -1,0 +1,57 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  namespace: mlops-af
+  name: nginx
+data:
+  nginx.conf: |
+    events {
+      worker_connections  4096;  ## Default: 1024
+    }
+    http {
+      server {
+        listen 8080;
+        server_name artemlops.github.io;
+        proxy_ssl_server_name off;
+        location / {
+          proxy_pass https://artemlops.github.io/awful-mlops/;
+          proxy_redirect off;
+        }
+      }
+    }
+---
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  namespace: mlops-af
+  name: mlops-af-proxy
+  labels:
+    app: mlops-af
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mlops-af
+  template:
+    metadata:
+      labels:
+        app: mlops-af
+    spec:
+      containers:
+        - name: server
+          image: nginx:1.19.7
+          volumeMounts:
+          - name: nginx-config
+            mountPath: /etc/nginx
+          ports:
+          - containerPort: 8080
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 8080
+            initialDelaySeconds: 5
+            periodSeconds: 5
+      volumes:
+        - name: nginx-config
+          configMap:
+            name: nginx

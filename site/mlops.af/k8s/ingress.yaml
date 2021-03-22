@@ -1,6 +1,7 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
+  namespace: mlops-af
   annotations:
     kubernetes.io/ingress.class: nginx
     nginx.ingress.kubernetes.io/rewrite-target: /
@@ -17,5 +18,5 @@ spec:
       paths:
       - path: /
         backend:
-          serviceName: mlops-af-service
+          serviceName: mlops-af-proxy
           servicePort: 80
