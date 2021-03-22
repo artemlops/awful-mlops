@@ -45,7 +45,7 @@ spec:
               && cd $(mktemp -d)
               && git clone ${GIT_REPO} ./repo
               && cd ./repo
-              && python site/build.py --in_md README.md --in_html_template site/template.html --out_html site/www/index.html
+              && python site/build.py --in_md README.md --in_html_template site/templates/index.html --out_html site/www/index.html
               && cp -r site/img -T /var/www/mlops.af/public
               && cp site/nginx.conf /etc/nginx/nginx.conf
       containers:
