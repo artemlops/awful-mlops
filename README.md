@@ -1,6 +1,6 @@
 # Awful MLOps
 
-[mlops.af](https://mlops.af) is a compiled list of links to public **failure stories** related to MLOps.
+[mlops.af](https://mlops.af) ([artemlops.github.io/awful-mlops](https://artemlops.github.io/awful-mlops/)) is a compiled list of links to public **failure stories** related to MLOps.
 The list is being constantly updated.
 Most recent publications on top.
 

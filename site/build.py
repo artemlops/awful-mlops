@@ -27,7 +27,7 @@ if __name__ == "__main__":
     assert in_md.is_file(), in_md
     assert html_template.is_file(), html_template
     assert images_dir.is_dir, images_dir
-    if check_uncommitted:
+    if check_uncommitted and out_html.exists():
         print(f"Checking that output html file has no uncommitted changes")
         for cached in ["--cached", ""]:
             run(split(f"git diff {cached} --exit-code --name-only -- {out_html}"), check=True)
