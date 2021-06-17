@@ -1,4 +1,4 @@
-# Awful MLOps
+# MLOps On Fire
 
 [mlops.af](https://mlops.af) ([artemlops.github.io/awful-mlops](https://artemlops.github.io/awful-mlops/)) is a compiled list of links to public **failure stories** related to MLOps.
 The list is being constantly updated.
